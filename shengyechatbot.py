@@ -37,7 +37,7 @@ def helpmessage():
 【Speed】查看機器速度
 【Set】查看設定
 【Reread On/Off】收回查詢 開啟/關閉
-【Setread】【SR】設定已讀點
+【Setread】【SR】已讀設置
 【Lookread】【LR】查詢已讀
 【Tagall】全體標註
 ⇛Create it By.ShengYe™⇚
@@ -89,7 +89,7 @@ def lineBot(op):
                             chiya = ""
                             for rom in wait2["ROM"][msg.to].items():
                                 chiya += rom[1] + "\n"
-                        cl.sendMessage(msg.to, "<已讀的人>%s\n[%s]" % (wait2['readMember'][msg.to],setTime[msg.to]))
+                        cl.sendMessage(msg.to, "<已讀者：>%s\n[%s]" % (wait2['readMember'][msg.to],setTime[msg.to]))
                     else:
                         cl.sendMessage(msg.to, "請輸入SR設置已讀點")
                 elif text.lower() == 'speed':
