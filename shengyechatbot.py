@@ -70,7 +70,7 @@ def lineBot(op):
                     cl.sendMessage(to, str(helpMessage))
                     cl.sendContact(to, "u52906c3d95b296a8ef133af56d7383a4")
                 elif msg.text in ["SR","Setread"]:
-                    cl.sendMessage(msg.to, "設置已讀點")
+                    cl.sendMessage(msg.to, "已讀設置")
                     try:
                         del wait2['readPoint'][msg.to]
                         del wait2['readMember'][msg.to]
@@ -146,7 +146,7 @@ def lineBot(op):
                 if settings["reread"] == True:
                     if msg_id in msg_dict:
                         if msg_dict[msg_id]["from"] not in bl:
-                            cl.sendMessage(at,"[收回訊息者]\n%s\n[訊息內容]\n%s"%(cl.getContact(msg_dict[msg_id]["from"]).displayName,msg_dict[msg_id]["text"]))
+                            cl.sendMessage(at,"[抓到收回訊息！]\n%s\n[訊息內容：]\n%s"%(cl.getContact(msg_dict[msg_id]["from"]).displayName,msg_dict[msg_id]["text"]))
                         del msg_dict[msg_id]
                 else:
                     pass
