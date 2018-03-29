@@ -43,7 +43,7 @@ def helpmessage():
 ⇛Create it By.ShengYe™⇚
 """
     return helpMessage
-admin=['u52906c3d95b296a8ef133af56d7383a4',clMID]
+admin=['u769b974bd4004ee5954b29a34df6a819',clMID]
 def lineBot(op):
     try:
         if op.type == 0:
